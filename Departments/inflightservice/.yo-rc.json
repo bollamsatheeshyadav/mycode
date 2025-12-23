@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.20.8",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.20.0",
+    "libraryName": "inflightservice",
+    "libraryId": "40696b39-22ba-4e7e-95ce-33bb76c44f02",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "inflightservice",
+    "solutionShortDescription": "inflightservice description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

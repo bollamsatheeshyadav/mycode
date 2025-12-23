@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "crmpart-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/crmpart/CrmpartWebPart.js",
+          "manifest": "./src/webparts/crmpart/CrmpartWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CrmpartWebPartStrings": "lib/webparts/crmpart/loc/{locale}.js"
+  }
+}

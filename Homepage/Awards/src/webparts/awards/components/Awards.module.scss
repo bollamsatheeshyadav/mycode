@@ -1,0 +1,73 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.wrapper {
+  position: relative;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.mediaTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mediaTable th {
+  background: #f3f3f3;
+  text-align: left;
+  padding: 10px;
+}
+
+.mediaTable td {
+  padding: 10px;
+}
+
+.fileTitle {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* HOVER ROW EFFECTS */
+.normalRow {
+  opacity: 1;
+}
+
+.activeRow {
+  background: #fffbe6;
+  transition: 0.3s;
+}
+
+.fadedRow {
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+/* FLOATING PREVIEW IMAGE */
+.previewBox {
+  position: fixed;
+  width: 300px;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  z-index: 9999;
+  pointer-events: none; /* prevents blocking mouse */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* VIEW BUTTON */
+.viewBtn {
+  padding: 6px 14px;
+  border: 1px solid #0078d4;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.viewBtn:hover {
+  background: #0078d4;
+  color: white;
+}

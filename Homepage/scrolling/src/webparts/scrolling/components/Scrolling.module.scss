@@ -1,0 +1,32 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.scrollingContainer {
+  background-color: #f3f3f3;
+  padding: 10px;
+  overflow: hidden;   // hides overflow so text scrolls cleanly
+  white-space: nowrap;
+}
+
+.marquee {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marqueeContent {
+  display: inline-block;
+  padding-left: 100%;   // start off-screen to the right
+  animation: scroll-left 15s linear infinite;
+  font-weight: bold;
+  color: #0078d4;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);     // start at right edge
+  }
+  100% {
+    transform: translateX(-100%); // move fully to left
+  }
+}

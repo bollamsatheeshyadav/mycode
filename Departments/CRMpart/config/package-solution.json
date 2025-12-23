@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "cr-mpart-client-side-solution",
+    "id": "c0eeed83-37f9-4629-8a1c-1504c6451ebb",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "CRMpart description"
+      },
+      "longDescription": {
+        "default": "CRMpart description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "cr-mpart Feature",
+        "description": "The feature that activates elements of the cr-mpart solution.",
+        "id": "31ee58f2-2be8-42d7-8c25-55fc43ff1d40",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/cr-mpart.sppkg"
+  }
+}

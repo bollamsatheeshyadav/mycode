@@ -1,0 +1,230 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+/* =============================
+   Container (Corporate Look)
+============================= */
+.container {
+  padding: 8px 16px 16px 16px;
+  background: #eef6fc;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* =============================
+   Header Section
+============================= */
+
+.headerBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* CEO Main Heading */
+.heading {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0 0 6px 0;
+  color: #0078d4;
+
+  animation: fadeSlideIn 0.7s ease-out;
+  transition: all 0.3s ease;
+}
+
+.heading:hover {
+  transform: scale(1.05);
+  color: #005a9e;
+  text-shadow: 0 3px 10px rgba(0, 120, 212, 0.3);
+}
+.postDate {
+  font-size: 16px;
+  color: #666;
+  margin-left: 10px;
+}
+
+/* Subheading */
+.subHeading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #444;
+  animation: fadeSlideIn 0.6s ease-out;
+}
+
+/* =============================
+   Buttons
+============================= */
+
+.viewBtn,
+.recentBtn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+/* Blue View All Button */
+.viewBtn {
+  background: #0078d4;
+  color: white;
+
+  &:hover {
+    background: #005a9e;
+    transform: translateY(-2px);
+  }
+}
+
+/* Green Recent Button */
+.recentBtn {
+  background: #28a745;
+  color: white;
+  padding: 12px 25px;
+  font-size: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  animation: slideUp 0.6s ease;
+
+  &:hover {
+    transform: scale(1.08);
+    background: #218838;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.18);
+  }
+}
+
+/* Center Button Row */
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  animation: fadeUp 0.7s ease;
+}
+
+/* =============================
+   Message Card
+============================= */
+
+.card {
+  background: #ffffff;
+  padding: 12px 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  margin-top: 6px; /* small gap under title */
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.message {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.date {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* =============================
+   Scrollable Area for Table
+============================= */
+
+.scrollContainer {
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding-right: 10px;
+
+  scrollbar-width: thin;
+  scrollbar-color: #0078d4 #e3e3e3;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  width: 7px;
+}
+
+.scrollContainer::-webkit-scrollbar-thumb {
+  background: #0078d4;
+  border-radius: 10px;
+}
+
+.scrollContainer::-webkit-scrollbar-track {
+  background: #e3e3e3;
+}
+
+/* =============================
+   Table Styling
+============================= */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    background: #0078d4;
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+
+  td {
+    padding: 10px;
+    background: #f3f3f3;
+    border-bottom: 1px solid #ccc;
+  }
+
+  tr:hover td {
+    background: #e8f2ff;
+    transition: 0.3s;
+  }
+}
+
+/* =============================
+   Animations
+============================= */
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeUp {
+  animation: fadeUp 0.6s ease-in-out;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

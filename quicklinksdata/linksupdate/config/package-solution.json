@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "linksupdate-client-side-solution",
+    "id": "e8638439-495b-4d06-b92c-c5d0880b4033",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "linksupdate description"
+      },
+      "longDescription": {
+        "default": "linksupdate description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "linksupdate Feature",
+        "description": "The feature that activates elements of the linksupdate solution.",
+        "id": "eadc8e6e-c7e3-49ff-8105-b927306313d6",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/linksupdate.sppkg"
+  }
+}

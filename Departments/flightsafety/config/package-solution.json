@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "flightsafety-client-side-solution",
+    "id": "81e4f35d-e5d2-4489-92b5-d50c57a2c704",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "flightsafety description"
+      },
+      "longDescription": {
+        "default": "flightsafety description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "flightsafety Feature",
+        "description": "The feature that activates elements of the flightsafety solution.",
+        "id": "5827d624-f79a-4ad2-aa46-441b84194d21",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/flightsafety.sppkg"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "flightoperations-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/flightoperations/FlightoperationsWebPart.js",
+          "manifest": "./src/webparts/flightoperations/FlightoperationsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "FlightoperationsWebPartStrings": "lib/webparts/flightoperations/loc/{locale}.js"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "revenuemanagement-client-side-solution",
+    "id": "90fbac66-7d2b-4e31-bc6d-7c09293776a4",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "revenuemanagement description"
+      },
+      "longDescription": {
+        "default": "revenuemanagement description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "revenuemanagement Feature",
+        "description": "The feature that activates elements of the revenuemanagement solution.",
+        "id": "bbd1481e-d47b-4ae4-82e8-6fd52cac50de",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/revenuemanagement.sppkg"
+  }
+}

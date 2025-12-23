@@ -1,0 +1,55 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.socialContainer {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  padding: 10px;        /* Reduced padding (smaller height) */
+  background: #f4f7fb;  /* Soft corporate background */
+  border-radius: 8px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.socialIcon {
+  width: 28px;
+  height: 28px;
+}
+
+.iconBox {
+  font-size: 30px;
+  cursor: pointer;
+  
+  transition: all 0.3s ease;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* Instagram */
+.iconBox:nth-child(1) {
+  color: #833AB4;   /* corporate Instagram purple */
+}
+
+/* Facebook */
+.iconBox:nth-child(2) {
+  color: #1877F2;   /* corporate Facebook blue */
+}
+
+/* Twitter (X) */
+.iconBox:nth-child(3) {
+  color: #1C1C1E;   /* modern Twitter dark gray */
+}
+
+/* LinkedIn */
+.iconBox:nth-child(4) {
+  color: #0A66C2;   /* corporate LinkedIn blue */
+}
+
+/* HOVER EFFECT */
+.iconBox:hover {
+  transform: scale(1.18);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  background: #f4f8fc;  /* light corporate background */
+}

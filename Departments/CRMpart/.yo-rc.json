@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.20.8",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.20.0",
+    "libraryName": "cr-mpart",
+    "libraryId": "c0eeed83-37f9-4629-8a1c-1504c6451ebb",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "CRMpart",
+    "solutionShortDescription": "CRMpart description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

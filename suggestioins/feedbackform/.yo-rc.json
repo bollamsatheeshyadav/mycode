@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.20.8",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.20.0",
+    "libraryName": "feedbackform",
+    "libraryId": "64780667-5b29-40e7-b0bd-4790d6761c30",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "feedbackform",
+    "solutionShortDescription": "feedbackform description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

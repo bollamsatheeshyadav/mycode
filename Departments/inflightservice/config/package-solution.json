@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "inflightservice-client-side-solution",
+    "id": "40696b39-22ba-4e7e-95ce-33bb76c44f02",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "inflightservice description"
+      },
+      "longDescription": {
+        "default": "inflightservice description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "inflightservice Feature",
+        "description": "The feature that activates elements of the inflightservice solution.",
+        "id": "1d1c8de7-3cc2-4639-a058-6efd475120ef",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/inflightservice.sppkg"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "salesmarketing-client-side-solution",
+    "id": "e06b96cc-689d-4482-a071-f3c402afaa04",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "salesmarketing description"
+      },
+      "longDescription": {
+        "default": "salesmarketing description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "salesmarketing Feature",
+        "description": "The feature that activates elements of the salesmarketing solution.",
+        "id": "3e69f936-5917-46a6-9276-a99418ecef82",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/salesmarketing.sppkg"
+  }
+}

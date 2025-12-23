@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "alllinks-client-side-solution",
+    "id": "3ae3479d-074b-4ba4-a52e-9e8a79c0fb34",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "alllinks description"
+      },
+      "longDescription": {
+        "default": "alllinks description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "alllinks Feature",
+        "description": "The feature that activates elements of the alllinks solution.",
+        "id": "522f65b4-983e-4fc2-9bb0-bbe5aa459924",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/alllinks.sppkg"
+  }
+}

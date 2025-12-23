@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "humanresource-client-side-solution",
+    "id": "7fc13c90-9bdb-4e90-92a1-155abca4380e",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "humanresource description"
+      },
+      "longDescription": {
+        "default": "humanresource description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "humanresource Feature",
+        "description": "The feature that activates elements of the humanresource solution.",
+        "id": "97ee1b27-4f2a-46f4-9099-a202578d1e23",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/humanresource.sppkg"
+  }
+}

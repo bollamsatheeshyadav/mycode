@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "networkplanning-client-side-solution",
+    "id": "20d4d26a-9c3e-4a75-9465-c1baed7d2ea7",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "networkplanning description"
+      },
+      "longDescription": {
+        "default": "networkplanning description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "networkplanning Feature",
+        "description": "The feature that activates elements of the networkplanning solution.",
+        "id": "887b86c5-0558-4e51-bb99-71bdb85463d5",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/networkplanning.sppkg"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.20.8",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.20.0",
+    "libraryName": "ce-ooffice",
+    "libraryId": "5cad8772-cba6-448a-8a27-5dfdae3cf14c",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "ce-ooffice",
+    "solutionShortDescription": "ce-ooffice description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

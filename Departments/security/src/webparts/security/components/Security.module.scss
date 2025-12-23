@@ -1,0 +1,170 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.policyContainer {
+  padding: 2px;
+  text-align: center;
+  background-color: orange;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropIcon {
+  margin-left: 6px;
+  transition: transform 0.3s ease;
+}
+
+
+.dropdown:hover .dropIcon {
+  transform: rotate(180deg);
+}
+
+.curtainMenu {
+  position: absolute;
+  top: 42px;
+               /* slight offset */
+              /* align exactly below parent */
+           /* enough for one-line text */
+  left: 0;
+  width: 190px;                /* ⬅ Smaller width */
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.12);
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.35s ease-in-out;
+  z-index: 999;
+  padding: 0;                /* ⬅ No extra space */
+}
+/* Curtain opens downwards */
+.dropdown:hover .curtainMenu {
+  max-height: 200px;          /* ⬅ Reduced dropdown height */
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.curtainMenu a {
+  display: block;
+  padding: 10px 14px;         /* ⬅ Reduced padding */
+  color: #004578;
+  
+  text-decoration: none;
+  background: white;
+  position: relative;
+  transition: background 0.3s;
+  white-space: nowrap;      /* ⬅ prevent text from wrapping */
+  overflow: hidden;         /* hide overflow */
+  text-overflow: ellipsis;  /* show ... if text is too long */
+}
+
+.curtainMenu a::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 14px;
+  width: 0;
+  height: 2px;
+  background: #0078d4;
+  transition: width 0.3s ease;
+}
+
+.curtainMenu a:hover::after {
+  width: calc(100% - 28px);
+}
+
+.curtainMenu a:hover {
+  background: #eaf4ff;
+}
+
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background: white;
+  min-width: 160px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  z-index: 100;
+}
+
+.dropdownContent a {
+  padding: 10px 14px;
+  display: block;
+  text-decoration: none;
+  color: #004578;
+}
+
+.dropdownContent a:hover {
+  background: #e5f3ff;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+
+.actionButton {
+  background: linear-gradient(
+  135deg,
+  rgba(0, 43, 67, 0.85),   /* Deep Ocean Blue */
+  rgba(0, 75, 107, 0.80),  /* Wave Blue */
+  rgba(2, 107, 133, 0.75), /* Sea Teal */
+  rgba(60, 160, 201, 0.70) /* Aqua Reflection */
+);
+
+  color: #ffffff;
+  padding: 10px 20px; 
+  
+  border: none;
+  border-radius: 18px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🟦 Ocean Water Bubble Shake Effect */
+.actionButton:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 180, 255, 0.60),
+    rgba(0, 220, 255, 0.50)
+  );
+  transform: scale(1.05) translateY(-2px);
+  animation: bubbleShake 0.45s ease-in-out;
+}
+
+/* Press effect */
+.actionButton:active {
+  transform: scale(0.97);
+}
+
+/* 🔵 Bubble Shake Animation (soft bounce) */
+@keyframes bubbleShake {
+  0% { transform: scale(1.05) translateY(-2px) rotate(0deg); }
+  25% { transform: scale(1.08) translateY(-1px) rotate(1deg); }
+  50% { transform: scale(1.03) translateY(-3px) rotate(-1deg); }
+  75% { transform: scale(1.07) translateY(-2px) rotate(0.5deg); }
+  100% { transform: scale(1.05) translateY(-2px) rotate(0deg); }
+}
+

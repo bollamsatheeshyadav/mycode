@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "imagedisplay-client-side-solution",
+    "id": "5400efd2-07e3-447b-97d9-38ab6aef8b7d",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "imagedisplay description"
+      },
+      "longDescription": {
+        "default": "imagedisplay description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "imagedisplay Feature",
+        "description": "The feature that activates elements of the imagedisplay solution.",
+        "id": "b11fd0dd-a73a-4c18-a0a3-30b3d838ae59",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/imagedisplay.sppkg"
+  }
+}

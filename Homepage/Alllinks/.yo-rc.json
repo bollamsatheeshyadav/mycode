@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.20.8",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.20.0",
+    "libraryName": "alllinks",
+    "libraryId": "3ae3479d-074b-4ba4-a52e-9e8a79c0fb34",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "alllinks",
+    "solutionShortDescription": "alllinks description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

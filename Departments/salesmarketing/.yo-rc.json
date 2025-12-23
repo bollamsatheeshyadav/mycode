@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.20.8",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.20.0",
+    "libraryName": "salesmarketing",
+    "libraryId": "e06b96cc-689d-4482-a071-f3c402afaa04",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "salesmarketing",
+    "solutionShortDescription": "salesmarketing description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

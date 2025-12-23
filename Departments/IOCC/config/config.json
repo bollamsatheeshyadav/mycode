@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "iocc-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/iocc/IoccWebPart.js",
+          "manifest": "./src/webparts/iocc/IoccWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "IoccWebPartStrings": "lib/webparts/iocc/loc/{locale}.js"
+  }
+}

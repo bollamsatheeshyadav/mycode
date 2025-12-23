@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "informationtechnalogy-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/informationtechnalogy/InformationtechnalogyWebPart.js",
+          "manifest": "./src/webparts/informationtechnalogy/InformationtechnalogyWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "InformationtechnalogyWebPartStrings": "lib/webparts/informationtechnalogy/loc/{locale}.js"
+  }
+}

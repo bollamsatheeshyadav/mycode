@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "informationtechnalogy-client-side-solution",
+    "id": "76fcf4eb-b1d2-401d-80bb-c8aa3eec3ac7",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "informationtechnalogy description"
+      },
+      "longDescription": {
+        "default": "informationtechnalogy description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "informationtechnalogy Feature",
+        "description": "The feature that activates elements of the informationtechnalogy solution.",
+        "id": "1f0154ee-1de7-410e-9107-b5ac68aebc6a",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/informationtechnalogy.sppkg"
+  }
+}

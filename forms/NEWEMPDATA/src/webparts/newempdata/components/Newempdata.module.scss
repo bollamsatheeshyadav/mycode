@@ -1,0 +1,398 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+/* ================= ROOT ================= */
+.newempdata {
+  max-width: 960px;
+  margin: auto;
+  padding: 24px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(225, 245, 255, 0.7),
+    rgba(255, 230, 245, 0.65)
+  );
+
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+
+  animation: fadeIn 0.6s ease;
+}
+
+.formWrapper {
+  position: relative;
+  min-height: 420px;
+  overflow: hidden;
+}
+
+.formSlide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+}
+
+/* Forward (Next) */
+.slideNext {
+  animation: slideNext 0.45s cubic-bezier(.4,0,.2,1);
+  z-index: 2;
+}
+
+/* Backward (Prev) */
+.slidePrev {
+  animation: slidePrev 0.45s cubic-bezier(.4,0,.2,1);
+  z-index: 2;
+}
+
+@keyframes slideNext {
+  from {
+    transform: translateX(100%);
+    opacity: 0.6;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slidePrev {
+  from {
+    transform: translateX(-100%);
+    opacity: 0.6;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes animatedBackground {
+  0% {
+    background-color: #00aaff;
+  }
+  25% {
+    background-color: #ff66cc;
+  }
+  50% {
+    background-color: #00ffaa;
+  }
+  75% {
+    background-color: #ffcc33;
+  }
+  100% {
+    background-color: #00aaff;
+  }
+}
+
+.animatedBackground {
+  animation: animatedBackground 8s ease-in-out infinite;
+  transition: background-color 0.5s ease-in-out;
+  border-radius: 8px; /* optional */
+  padding: 20px; /* optional */
+}
+
+.animatedGradient:hover {
+  animation-duration: 6s;
+}
+
+
+.newempdata h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+  letter-spacing: 0.3px;
+  position: relative;
+  display: inline-block;
+  cursor: default;
+  transition: all 0.4s ease;
+
+  /* Initial slide-in */
+  animation: slideDown 0.6s ease forwards;
+}
+
+/* Underline animation */
+.newempdata h2::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #2563eb, #ec4899);
+  border-radius: 2px;
+  transition: width 0.4s ease;
+  margin-top: 6px;
+}
+
+/* Hover effects */
+.newempdata h2:hover {
+  color: #2563eb;
+  transform: translateY(-4px) scale(1.03);
+}
+
+.newempdata h2:hover::after {
+  width: 100%; /* full underline on hover */
+}
+
+/* Slide-in keyframes */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= FORM CARD ================= */
+/* ================= FORM CARD ================= */
+.formCard {
+  background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+  background-size: 800% 800%; /* larger size for smooth animation */
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow:
+    0 12px 26px rgba(0, 0, 0, 0.08),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+
+  animation: animatedGradient 15s ease infinite;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Animated gradient keyframes */
+@keyframes animatedGradient {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 50% 50%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 50% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Optional: hover effect for the container */
+.formCard:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================= FIELDS CONTAINER ================= */
+.formFieldsContainer {
+  background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+  background-size: 600% 600%;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.08);
+  animation: gradientShift 12s ease infinite;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Hover effect */
+.formFieldsContainer:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Animated gradient keyframes */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 50% 50%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 50% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* ================= HEADING ================= */
+.newempdata h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+  letter-spacing: 0.3px;
+  animation: slideDown 0.5s ease;
+}
+
+/* ================= STEPPER ================= */
+.stepper {
+  display: flex;
+  gap: 6px; /* smaller gap */
+  margin-bottom: 14px;
+}
+
+.stepBtn {
+  flex: none; /* don't stretch */
+  height: 32px; /* smaller height */
+  min-width: 60px; /* compact width */
+  padding: 0 10px; /* smaller padding */
+  border-radius: 6px; /* smaller corners */
+  border: none;
+  font-size: 12px; /* smaller text */
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.6);
+  color: #0f172a;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(.4,0,.2,1);
+}
+
+.stepBtn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, #2563eb, #ec4899);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.stepBtn:hover::before {
+  opacity: 0.15;
+}
+
+.stepBtn:hover:not(:disabled) {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(37, 99, 235, 0.2);
+}
+
+.stepBtn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Active step */
+.active {
+  background: linear-gradient(135deg, #2563eb, #ec4899);
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.3);
+}
+
+/* Active step */
+.active {
+  background: linear-gradient(135deg, #2563eb, #ec4899);
+  color: #fff;
+  box-shadow: 0 12px 26px rgba(37, 99, 235, 0.45);
+}
+
+/* ================= PROGRESS BAR ================= */
+.progressBar {
+  height: 7px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #2563eb, #ec4899);
+  border-radius: 12px;
+  transition: width 0.45s ease;
+}
+
+/* ================= FORM WRAPPER ================= */
+.formWrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Slide directions */
+.slideFromRight {
+  animation: slideRight 0.4s cubic-bezier(.4,0,.2,1);
+}
+
+.slideFromLeft {
+  animation: slideLeft 0.4s cubic-bezier(.4,0,.2,1);
+}
+
+/* ================= FORM CARD ================= */
+.formCard {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow:
+    0 12px 26px rgba(0, 0, 0, 0.06),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+
+  animation: scaleIn 0.4s ease;
+}
+
+/* ================= FLUENT UI OVERRIDES ================= */
+:global(.ms-TextField) {
+  transition: transform 0.25s ease;
+}
+
+:global(.ms-TextField:hover) {
+  transform: translateY(-2px);
+}
+
+:global(.ms-TextField-field:focus) {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+}
+
+/* Primary button */
+:global(.ms-Button--primary) {
+  background: linear-gradient(135deg, #2563eb, #ec4899);
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+:global(.ms-Button--primary:hover) {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.4);
+}
+
+:global(.ms-Button--primary:active) {
+  transform: scale(0.96);
+}
+
+/* Message bar */
+:global(.ms-MessageBar) {
+  animation: slideUp 0.4s ease;
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+  .stepBtn {
+    font-size: 13px;
+    height: 38px;
+  }
+
+  .newempdata {
+    padding: 16px;
+  }
+}

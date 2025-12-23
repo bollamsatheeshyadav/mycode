@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.20.8",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.20.0",
+    "libraryName": "ce-oconnect",
+    "libraryId": "d7a021f9-fb07-4a19-a93d-fc934fd01b8f",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "CEOconnect",
+    "solutionShortDescription": "CEOconnect description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

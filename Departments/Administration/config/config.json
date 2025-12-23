@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "administration-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/administration/AdministrationWebPart.js",
+          "manifest": "./src/webparts/administration/AdministrationWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "AdministrationWebPartStrings": "lib/webparts/administration/loc/{locale}.js"
+  }
+}

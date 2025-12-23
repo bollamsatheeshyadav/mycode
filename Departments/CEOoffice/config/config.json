@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "ce-ooffice-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/ceOoffice/CeOofficeWebPart.js",
+          "manifest": "./src/webparts/ceOoffice/CeOofficeWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CeOofficeWebPartStrings": "lib/webparts/ceOoffice/loc/{locale}.js"
+  }
+}

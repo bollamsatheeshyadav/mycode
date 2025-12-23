@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "newempdata-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/newempdata/NewempdataWebPart.js",
+          "manifest": "./src/webparts/newempdata/NewempdataWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "NewempdataWebPartStrings": "lib/webparts/newempdata/loc/{locale}.js"
+  }
+}

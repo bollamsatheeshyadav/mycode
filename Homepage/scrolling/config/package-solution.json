@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "scrolling-client-side-solution",
+    "id": "063a0e66-a07e-49f5-9d9c-3d7003ed96ed",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "scrolling description"
+      },
+      "longDescription": {
+        "default": "scrolling description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "scrolling Feature",
+        "description": "The feature that activates elements of the scrolling solution.",
+        "id": "d9e5a2d9-6619-4c31-a3e6-6e9413d572cd",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/scrolling.sppkg"
+  }
+}

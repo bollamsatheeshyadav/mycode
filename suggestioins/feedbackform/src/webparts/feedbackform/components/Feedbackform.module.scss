@@ -1,0 +1,83 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.feedbackForm {
+  position: relative;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Floating Feedback Icon */
+.floatingBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #0078d4;
+  color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.2) rotate(15deg);
+    background-color: #005a9e;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+  }
+}
+
+/* Panel */
+.ms-Panel {
+  background: linear-gradient(145deg, #f0f4ff, #d9e4ff);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Input Fields */
+.inputField .ms-TextField-fieldGroup {
+  background: linear-gradient(135deg, #fff8e1, #ffe0b2);
+  border-radius: 8px;
+  padding: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+}
+
+/* Dropdown Fields */
+.dropdownField .ms-Dropdown-title {
+  background: linear-gradient(135deg, #e1f5fe, #b3e5fc);
+  border-radius: 8px;
+  padding: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+}
+
+/* Primary Button */
+.submitBtn {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    filter: brightness(1.1);
+  }
+}
+
+/* MessageBar */
+.ms-MessageBar {
+  margin-bottom: 15px;
+  border-radius: 6px;
+  font-weight: 500;
+}

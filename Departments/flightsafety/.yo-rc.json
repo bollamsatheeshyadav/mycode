@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.20.8",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.20.0",
+    "libraryName": "flightsafety",
+    "libraryId": "81e4f35d-e5d2-4489-92b5-d50c57a2c704",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "flightsafety",
+    "solutionShortDescription": "flightsafety description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

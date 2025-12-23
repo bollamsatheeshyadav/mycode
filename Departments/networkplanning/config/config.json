@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "networkplanning-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/networkplanning/NetworkplanningWebPart.js",
+          "manifest": "./src/webparts/networkplanning/NetworkplanningWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "NetworkplanningWebPartStrings": "lib/webparts/networkplanning/loc/{locale}.js"
+  }
+}

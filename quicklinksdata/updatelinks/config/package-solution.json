@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "updatelinks-client-side-solution",
+    "id": "6e343a23-38ac-4a3d-9e3c-dd6b37b3dc88",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "updatelinks description"
+      },
+      "longDescription": {
+        "default": "updatelinks description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "updatelinks Feature",
+        "description": "The feature that activates elements of the updatelinks solution.",
+        "id": "c3fb4624-2c70-4355-abf1-8399cdee722b",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/updatelinks.sppkg"
+  }
+}

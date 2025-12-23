@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "mediapart-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/mediapart/MediapartWebPart.js",
+          "manifest": "./src/webparts/mediapart/MediapartWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MediapartWebPartStrings": "lib/webparts/mediapart/loc/{locale}.js"
+  }
+}

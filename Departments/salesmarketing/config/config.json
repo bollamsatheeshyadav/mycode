@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "salesmarketing-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/salesmarketing/SalesmarketingWebPart.js",
+          "manifest": "./src/webparts/salesmarketing/SalesmarketingWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SalesmarketingWebPartStrings": "lib/webparts/salesmarketing/loc/{locale}.js"
+  }
+}

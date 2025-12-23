@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "ce-oconnect-client-side-solution",
+    "id": "d7a021f9-fb07-4a19-a93d-fc934fd01b8f",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "CEOconnect description"
+      },
+      "longDescription": {
+        "default": "CEOconnect description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "ce-oconnect Feature",
+        "description": "The feature that activates elements of the ce-oconnect solution.",
+        "id": "309aa186-4d56-4e9e-b142-c63fb54d77f1",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/ce-oconnect.sppkg"
+  }
+}
